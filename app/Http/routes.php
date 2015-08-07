@@ -16,6 +16,16 @@ Route::get('/', [
     'uses' => 'ChatController@index'
 ]);
 
+Route::get('/messages', [
+    'as' => 'messages',
+    'uses' => 'ChatController@messages'
+]);
+
+
+Route::get('/messages/clean', [
+    'as' => 'messages',
+    'uses' => 'ChatController@messagesClean'
+]);
 
 Route::post('/send', [
     'as' => 'send',

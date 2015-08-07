@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Events\MessageSent;
+use App\Message;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -23,6 +24,21 @@ class ChatController extends Controller
 
     public function send()
     {
-        event(new MessageSent(Input::get('message')));
+        $newMessage = new Message();
+        $newMessage->name = Input::get('name');
+        $newMessage->text = Input::get('message');
+        $newMessage->save();
+
+        event(new MessageSent($newMessage));
+    }
+
+    public function messages() {
+        return Message::all();
+    }
+
+    public function messagesClean() {
+        return Message::all()->each(function($message) {
+            $message->forceDelete();
+        });
     }
 }

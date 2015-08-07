@@ -3,6 +3,7 @@
 namespace App\Events;
 
 use App\Events\Event;
+use App\Message;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 
@@ -19,7 +20,7 @@ class MessageSent extends Event implements ShouldBroadcast
      *
      * @param $message
      */
-    public function __construct($message)
+    public function __construct(Message $message)
     {
         //
         $this->message = $message;
