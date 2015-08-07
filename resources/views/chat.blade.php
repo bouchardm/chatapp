@@ -9,9 +9,12 @@
             <hr>
         </div>
         <div v-repeat="message: messages" class="row">
-            <div class="col-lg-2 text-left">@{{ message.name }}</div>
-            <div class="col-lg-10 text-left">@{{ message.text }}</div>
             <hr>
+            <div class="col-lg-2 text-left">@{{ message.name }}</div>
+            <div class="col-lg-10 text-left">
+                <img src="@{{ message.text }}" alt="#" v-if="isImgLink(message.text)" v-on="load: makeImageZoomable"/>
+                <p>@{{ message.text }}</p>
+            </div>
         </div>
         <form action="/send" method="POST" id="message-form" class="form-inline">
             <div class="form-group">
@@ -35,6 +38,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.11/vue-resource.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script src="js/all.js"></script>
 
     <script>
         (function () {
@@ -68,6 +72,15 @@
                             this.messages = []
                         });
                         e.preventDefault();
+                    },
+                    isImgLink: function(text) {
+                        return(text.match(/\.(jpeg|jpg|gif|png)$/) != null);
+                    },
+                    makeImageZoomable: function(img) {
+                        imageData[img.path[0]]         = {};
+                        imageData[img.path[0]].resized = false;
+                        img.path[0].dragToResizeId = img.path[0];
+                        makeImageZoomable(img.path[0]);
                     }
                 }
             });
