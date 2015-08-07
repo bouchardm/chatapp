@@ -4,13 +4,13 @@
     <h1>ChatApp</h1>
     <div id="messages">
         <div class="row">
-            <div class="col-sm-2 text-right"><strong>Nom</strong></div>
-            <div class="col-sm-10 text-left"><strong>Message</strong></div>
+            <div class="col-lg-2 text-left"><strong>Nom</strong></div>
+            <div class="col-lg-10 text-left"><strong>Message</strong></div>
             <hr>
         </div>
         <div v-repeat="message: messages" class="row">
-            <div class="col-sm-2 text-right">@{{ message.name }}</div>
-            <div class="col-sm-10 text-left">@{{ message.text }}</div>
+            <div class="col-lg-2 text-left">@{{ message.name }}</div>
+            <div class="col-lg-10 text-left">@{{ message.text }}</div>
             <hr>
         </div>
         <form action="/send" method="POST" id="message-form" class="form-inline">

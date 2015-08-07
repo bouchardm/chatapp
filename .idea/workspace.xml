@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layout/default.blade.php">
+      <file leaf-file-name="Envoy.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Envoy.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13419913">
-              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="5" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.16774891">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -48,15 +48,17 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/config/database.php" />
-        <option value="$PROJECT_DIR$/app/Events/MessageSent.php" />
         <option value="$PROJECT_DIR$/storage/database.sqlite" />
         <option value="$PROJECT_DIR$/app/Message.php" />
         <option value="$PROJECT_DIR$/database/factories/ModelFactory.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_08_07_025713_create_messages_table.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ChatController.php" />
-        <option value="$PROJECT_DIR$/resources/views/chat.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layout/default.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/chat.blade.php" />
+        <option value="$PROJECT_DIR$/app/Events/MessageSent.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Envoy.blade.php" />
       </list>
     </option>
   </component>
@@ -196,6 +198,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chatapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2765,16 +2799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13419913">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding>
-            <marker date="1438917994246" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/ModelFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23484848">
@@ -2784,23 +2808,6 @@
             <marker date="1438918000246" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1438918000246" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1438918000246" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_025713_create_messages_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87229437">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding>
-            <marker date="1438918013010" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
-            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
-            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -2819,22 +2826,6 @@
             <marker date="1438919447979" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1438919447979" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1438919447979" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Events/MessageSent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39737275">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <marker date="1438917281500" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder=" @var ..." />
-            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder=" Create a new event instance. ..." />
-            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder=" Get the channels the event should be broadcast on. ..." />
-            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -2867,40 +2858,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/chat.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/layout/default.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7683983">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.43614718">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
           <folding>
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{&quot;el&quot;: '#messages'...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{&quot;encrypted&quot;: true...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1438920337528" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438980241100" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438980241100" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438980241100" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438980241100" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438980241100" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438980241100" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438980241100" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438980241100" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438980241100" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout/default.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/chat.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13419913">
-          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="5" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.5032467">
+          <caret line="54" column="64" selection-start-line="54" selection-start-column="56" selection-end-line="54" selection-end-column="64" />
+          <folding>
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{&quot;el&quot;: '#messages'...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{&quot;encrypted&quot;: true...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438981314999" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Events/MessageSent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41125542">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <marker date="1438917281500" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder=" @var ..." />
+            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder=" Create a new event instance. ..." />
+            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder=" Get the channels the event should be broadcast on. ..." />
+            <marker date="1438917281500" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2012987">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <marker date="1438917994246" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_08_07_025713_create_messages_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49675325">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <marker date="1438918013010" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1438918013010" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16702586">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Envoy.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16774891">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding />
         </state>
       </provider>
