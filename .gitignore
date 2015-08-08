@@ -3,5 +3,5 @@
 Homestead.yaml
 Homestead.json
 .env
-storage/database.sqlite
+/storage/database.sqlite
 .idea
