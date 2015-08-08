@@ -14,6 +14,7 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.sass('app.scss');
     mix.scripts([
-        'drag_to_resize.user.js'
+        'drag_to_resize.user.js',
+        'chat.js'
     ]);
 });
