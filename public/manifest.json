@@ -1,14 +1,13 @@
 {
-  "name": "Push Demo",
-  "short_name": "Push Demo",
+  "name": "chat.bouchardm.com",
+  "short_name": "chat.bouchardm.com",
   "icons": [{
     "src": "images/icon-192x192.png",
-    "sizes": "192x192"
+    "sizes": "192x192",
+    "type": "image/png"
   }],
-  "start_url": "./index.html?homescreen=1",
+  "start_url": "/",
   "display": "standalone",
   "gcm_sender_id": "808258000549",
-
-  "//": "gcm_user_visible_only is only needed until Chrome 44 is in stable ",
   "gcm_user_visible_only": true
 }

@@ -15,6 +15,8 @@ elixir(function(mix) {
     mix.sass('app.scss');
     mix.scripts([
         'drag_to_resize.user.js',
-        'chat.js'
-    ]);
+        'chat.js',
+        'notification.js'
+    ]).scripts(['indexdbwrapper.js'], 'public/indexdbwrapper.js')
+        .scripts(['service-worker.js'], 'public/service-worker.js');
 });

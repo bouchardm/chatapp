@@ -2,6 +2,9 @@
 
 @section('content')
     <h1>ChatApp</h1>
+    <button class="js-push-button" disabled>
+        Enable Push Messages
+    </button>
     <div id="messages">
         <div class="row">
             <div class="col-lg-2 text-left"><strong>Nom</strong></div>

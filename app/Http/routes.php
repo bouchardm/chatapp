@@ -22,6 +22,16 @@ Route::get('/messages', [
 ]);
 
 
+Route::post('/subscription', [
+    'as' => 'newSubscription',
+    'uses' => 'SubscriptionController@subscribe'
+]);
+
+Route::delete('/subscription', [
+    'as' => 'deleteSubscription',
+    'uses' => 'SubscriptionController@unsubscribe'
+]);
+
 Route::get('/messages/clean', [
     'as' => 'messages',
     'uses' => 'ChatController@messagesClean'
