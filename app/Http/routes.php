@@ -21,7 +21,6 @@ Route::get('/messages', [
     'uses' => 'ChatController@messages'
 ]);
 
-
 Route::post('/subscription', [
     'as' => 'newSubscription',
     'uses' => 'SubscriptionController@subscribe'

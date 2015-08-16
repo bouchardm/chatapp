@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">=
 </head>
 <body>
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -28,13 +27,11 @@
             {{--</div><!--/.nav-collapse -->--}}
         </div>
     </nav>
-
     <div class="container">
         <div class="content">
             @yield('content')
         </div>
     </div>
-
     @yield('script')
 </body>
 </html>
