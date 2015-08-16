@@ -18,5 +18,6 @@ elixir(function(mix) {
         'chat.js',
         'notification.js'
     ]).scripts(['indexdbwrapper.js'], 'public/indexdbwrapper.js')
-        .scripts(['service-worker.js'], 'public/service-worker.js');
+        .scripts(['service-worker.js'], 'public/service-worker.js')
+        .scripts(['jquery.form.js'], 'public/js/jquery.form.js');
 });
