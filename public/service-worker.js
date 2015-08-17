@@ -20,16 +20,16 @@ function showNotification(title, body, icon, data) {
 
 // Gestion de l'envoie de notifivation à partir de serveur
 self.addEventListener('push', function(event) {
-        // on va allez chercher le dernier message puis l'afficher
-        var title = 'Nouveau message';
-        var message = 'Un beau et nouveau message';
+    // on va allez chercher le dernier message puis l'afficher
+    var title = 'Nouveau message';
+    var message = 'Un beau et nouveau message';
 
-        showNotification(title, message);
+    showNotification(title, message);
 });
 
 // Click on the notification
 self.addEventListener('notificationclick', function(event) {
-        var url = "https://chat.bouchardm.com";
-        event.waitUntil(clients.openWindow(url));
+    var url = "https://chat.bouchardm.com";
+    event.waitUntil(clients.openWindow(url));
 });
 //# sourceMappingURL=service-worker.js.map

@@ -12,13 +12,14 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
-    mix.styles(['bootstrap-switch.css'], 'public/css/bootstrap-switch.css');
-    mix.scripts([
-        'drag_to_resize.user.js',
-        'chat.js',
-        'notification.js'
-    ]).scripts(['indexdbwrapper.js'], 'public/indexdbwrapper.js')
+    mix.sass('app.scss')
+        .styles(['bootstrap-switch.css'], 'public/css/bootstrap-switch.css')
+        .scripts([
+            'drag_to_resize.user.js',
+            'chat.js',
+            'notification.js'
+        ])
+        .scripts(['indexdbwrapper.js'], 'public/indexdbwrapper.js')
         .scripts(['service-worker.js'], 'public/service-worker.js')
         .scripts(['jquery.form.js'], 'public/js/jquery.form.js')
         .scripts(['bootstrap-switch.js'], 'public/js/bootstrap-switch.js');
