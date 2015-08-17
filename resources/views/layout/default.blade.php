@@ -2,7 +2,10 @@
 <html>
 <head>
     <title>ChatApp</title>
+
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap-switch.css">
+
     <link rel="manifest" href="manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">

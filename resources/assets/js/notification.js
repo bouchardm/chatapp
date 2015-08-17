@@ -1,17 +1,16 @@
 var isPushEnabled = false;
 
 window.addEventListener('load', function() {
-    var pushButton = document.querySelector('.js-push-button');
-    pushButton.addEventListener('click', function() {
-        if (isPushEnabled) {
-            unsubscribe();
-        } else {
+    var pushButton = $("[name='push-notification']");
+
+    pushButton.on('switchChange.bootstrapSwitch', function(event, state) {
+        if (state) {
             subscribe();
+        } else {
+            unsubscribe();
         }
     });
 
-    // Check that service workers are supported, if so, progressively
-    // enhance and add push messaging support, otherwise continue without it.
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/service-worker.js')
             .then(initialiseState);
@@ -49,9 +48,8 @@ function initialiseState() {
         serviceWorkerRegistration.pushManager.getSubscription()
             .then(function(subscription) {
                 // Enable any UI which subscribes / unsubscribes from
-                // push messages.
-                var pushButton = document.querySelector('.js-push-button');
-                pushButton.disabled = false;
+                var pushButton = $("[name='push-notification']");
+                pushButton.bootstrapSwitch('disabled', false);
 
                 if (!subscription) {
                     // We aren't subscribed to push, so set UI
@@ -63,9 +61,8 @@ function initialiseState() {
                 sendSubscriptionToServer(subscription);
 
                 // Set your UI to show they have subscribed for
-                // push messages
-                pushButton.textContent = 'Disable Push Messages';
                 isPushEnabled = true;
+                pushButton.bootstrapSwitch('state', true);
             })
             .catch(function(err) {
                 console.warn('Error during getSubscription()', err);
@@ -76,20 +73,17 @@ function initialiseState() {
 function subscribe() {
     // Disable the button so it can't be changed while
     // we process the permission request
-    var pushButton = document.querySelector('.js-push-button');
-    pushButton.disabled = true;
+    var pushButton = $("[name='push-notification']");
+    pushButton.bootstrapSwitch('disabled', true);
 
     navigator.serviceWorker.ready.then(function(serviceWorkerRegistration) {
         serviceWorkerRegistration.pushManager.subscribe({userVisibleOnly: true})
             .then(function(subscription) {
                 // The subscription was successful
                 isPushEnabled = true;
-                pushButton.textContent = 'Disable Push Messages';
-                pushButton.disabled = false;
+                pushButton.bootstrapSwitch('disabled', false);
+                pushButton.bootstrapSwitch('state', true);
 
-                // TODO: Send the subscription subscription.endpoint
-                // to your server and save it to send a push message
-                // at a later date
                 return sendSubscriptionToServer(subscription);
             })
             .catch(function(e) {
@@ -99,22 +93,22 @@ function subscribe() {
                     // to manually change the notification permission to
                     // subscribe to push messages
                     window.Demo.debug.log('Permission for Notifications was denied');
-                    pushButton.disabled = true;
+                    pushButton.bootstrapSwitch('disabled', true);
                 } else {
                     // A problem occurred with the subscription, this can
                     // often be down to an issue or lack of the gcm_sender_id
                     // and / or gcm_user_visible_only
                     window.Demo.debug.log('Unable to subscribe to push.', e);
-                    pushButton.disabled = false;
-                    pushButton.textContent = 'Enable Push Messages';
+                    pushButton.bootstrapSwitch('disabled', false);
+                    //pushButton.textContent = 'Enable Push Messages';
                 }
             });
     });
 }
 
 function unsubscribe() {
-    var pushButton = document.querySelector('.js-push-button');
-    pushButton.disabled = true;
+    var pushButton = $("[name='push-notification']");
+    pushButton.bootstrapSwitch('disabled', true);
 
     navigator.serviceWorker.ready.then(function(serviceWorkerRegistration) {
         // To unsubscribe from push messaging, you need get the
@@ -126,8 +120,8 @@ function unsubscribe() {
                     // No subscription object, so set the state
                     // to allow the user to subscribe to push
                     isPushEnabled = false;
-                    pushButton.disabled = false;
-                    pushButton.textContent = 'Enable Push Messages';
+                    pushButton.bootstrapSwitch('disabled', false);
+                    pushButton.bootstrapSwitch('state', false);
                     return;
                 }
 
@@ -137,9 +131,10 @@ function unsubscribe() {
 
                 // We have a subscription, so call unsubscribe on it
                 pushSubscription.unsubscribe().then(function(successful) {
-                    pushButton.disabled = false;
-                    pushButton.textContent = 'Enable Push Messages';
+                    pushButton.bootstrapSwitch('disabled', false);
+                    //pushButton.textContent = 'Enable Push Messages';
                     isPushEnabled = false;
+                    pushButton.bootstrapSwitch('state', false);
                 }).catch(function(e) {
                     // We failed to unsubscribe, this can lead to
                     // an unusual state, so may be best to remove
@@ -147,8 +142,7 @@ function unsubscribe() {
                     // inform the user that you have done so
 
                     console.log('Unsubscription error: ', e);
-                    pushButton.disabled = false;
-                    pushButton.textContent = 'Enable Push Messages';
+                    pushButton.bootstrapSwitch('disabled', false);
                 });
             }).catch(function(e) {
                 console.error('Error thrown while unsubscribing from push messaging.', e);
