@@ -29,7 +29,7 @@ self.addEventListener('push', function(event) {
 
 // Click on the notification
 self.addEventListener('notificationclick', function(event) {
-        var url = "https://chat.bouchardm.com q";
+        var url = "https://chat.bouchardm.com";
         event.waitUntil(clients.openWindow(url));
 });
 //# sourceMappingURL=service-worker.js.map
