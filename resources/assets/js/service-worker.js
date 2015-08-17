@@ -29,6 +29,6 @@ self.addEventListener('push', function(event) {
 
 // Click on the notification
 self.addEventListener('notificationclick', function(event) {
-        var url = "https://chat.bouchardm.com";
+        var url = "https://chat.bouchardm.com q";
         event.waitUntil(clients.openWindow(url));
 });

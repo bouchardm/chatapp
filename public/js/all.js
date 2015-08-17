@@ -490,7 +490,7 @@ function endpointWorkaround(pushSubscription) {
 
 // Send the subscription to the server, so after it can send notification
 function sendSubscriptionToServer(subscription) {
-    console.log(subscription);
+    //console.log(subscription);
     $.ajax({
         url: "subscription",
         context: document.body,
