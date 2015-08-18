@@ -5,7 +5,7 @@ Homestead.json
 .env
 /storage/database.sqlite
 .idea
-/public/css
-/public/js
+public/css
+public/js
 /public/indexdbwrapper.*
 /public/service-worker.*
