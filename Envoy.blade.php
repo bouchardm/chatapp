@@ -2,6 +2,7 @@
 
 @task('deploy', ['on' => 'web'])
     cd /www/chatapp/
-    git pull
-    php artisan migrate
+    sudo -u www-data git pull
+    sudo -u www-data composer install
+    sudo -u www-data php artisan migrate
 @endtask

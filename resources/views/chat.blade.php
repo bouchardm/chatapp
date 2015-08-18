@@ -5,11 +5,6 @@
     <label for="push-notification">Enable Push Messages</label>
     <input type="checkbox" class="js-push-button" name="push-notification" disabled>
 
-
-    {{--<button class="js-push-button" disabled>--}}
-        {{--Enable Push Messages--}}
-    {{--</button>--}}
-
     <div id="messages">
         <div class="row">
             <div class="col-lg-2 text-left"><strong>Nom</strong></div>
@@ -46,7 +41,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.11/vue-resource.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/jquery.form.js"></script>
+
     <script src="js/bootstrap-switch.js"></script>
+
     <script src="js/all.js"></script>
 
     <script>
