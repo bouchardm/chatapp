@@ -36,16 +36,6 @@
 @endsection
 
 @section('script')
-    <script src="https://js.pusher.com/2.2/pusher.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.9/vue.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.11/vue-resource.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-
-    <script src="js/bootstrap-switch.js"></script>
-
-    <script src="js/all.js"></script>
-
     <script>
         $("[name='push-notification']").bootstrapSwitch();
     </script>

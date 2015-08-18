@@ -5,4 +5,5 @@
     sudo -u www-data git pull
     sudo -u www-data composer install
     sudo -u www-data php artisan migrate
+    gulp --production
 @endtask

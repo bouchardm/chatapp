@@ -1,6 +1,6 @@
 {
-  "name": "chat.bouchardm.com",
-  "short_name": "chat.bouchardm.com",
+  "name": "ChatApp",
+  "short_name": "ChatApp",
   "icons": [{
     "src": "images/icon-192x192.png",
     "sizes": "192x192",
