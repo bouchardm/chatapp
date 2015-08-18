@@ -3,10 +3,9 @@
 namespace App\Listeners;
 
 use App\Events\MessageSent;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Queue\InteractsWithQueue;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Support\Facades\Response;
+use App\Message;
+use App\SubscriptionNotification;
+use Davibennun\LaravelPushNotification\Facades\PushNotification;
 
 class MessageListener
 {
@@ -27,6 +26,15 @@ class MessageListener
      */
     public function handle(MessageSent $event)
     {
+        $subscriptions = SubscriptionNotification::all();
+        $message = Message::getRestoredPropertyValue($event->message);
+        foreach ($subscriptions as $subscription) {
+            $registration_id = $subscription->subscription_id;
+            PushNotification::app('appNameAndroid')
+                ->to($registration_id)
+                ->send($message->text);
+        }
+
         echo "success";
     }
 }

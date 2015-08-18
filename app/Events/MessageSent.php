@@ -22,7 +22,6 @@ class MessageSent extends Event implements ShouldBroadcast
      */
     public function __construct(Message $message)
     {
-        //
         $this->message = $message;
     }
 

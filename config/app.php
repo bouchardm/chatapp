@@ -143,7 +143,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        'Davibennun\LaravelPushNotification\LaravelPushNotificationServiceProvider'
     ],
 
     /*
@@ -192,6 +192,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        'PushNotification' => 'Davibennun\LaravelPushNotification\Facades\PushNotification'
     ],
 
 ];
